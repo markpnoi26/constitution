@@ -2,7 +2,9 @@
 
 Rules for an AI coding agent, kept in the repo the agent works in.
 
-`GENERAL_CONSTITUTION.md` is the whole thing. Point your agent at it and it is bound by it.
+[`GENERAL_CONSTITUTION.md`](https://github.com/markpnoi26/constitution/blob/master/GENERAL_CONSTITUTION.md)
+is the whole thing — one file, readable in a few minutes. Point your agent at it and it is bound
+by it.
 
 ## Why
 
@@ -29,20 +31,35 @@ The file is the authority; this table is just a map of it.
 
 ## Adopting it
 
-One project: copy `GENERAL_CONSTITUTION.md` into the repo, then add this line to `CLAUDE.md`:
+**One project.** From the project's root:
+
+```
+curl -O https://raw.githubusercontent.com/markpnoi26/constitution/master/GENERAL_CONSTITUTION.md
+```
+
+Then add this line to that project's `CLAUDE.md`:
 
 ```
 @GENERAL_CONSTITUTION.md
 ```
 
-Every project at once: clone this repo somewhere permanent and import it by absolute path from
-`~/.claude/CLAUDE.md`:
+**Every project at once.** Clone the repo somewhere permanent:
+
+```
+git clone https://github.com/markpnoi26/constitution.git ~/code/constitution
+```
+
+Then import it by absolute path from `~/.claude/CLAUDE.md`:
 
 ```
 @/home/you/code/constitution/GENERAL_CONSTITUTION.md
 ```
 
 One copy, one source of truth, amended in one place.
+
+To pick up later changes: `curl -O` again, or `git pull` in the clone.
+
+The `@` line needs a real file on disk — it does not take a URL. That is why you download first.
 
 ## Amending it
 
