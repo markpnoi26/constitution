@@ -1,4 +1,4 @@
-# GENERAL CONSTITUTION
+# CONSTITUTION
 
 **Ratified:** 2026-11-11
 **Binds:** the AI agent working in any repository that adopts this file. Not the developer.
@@ -130,7 +130,7 @@ including the agent's own judgment, habits, defaults, or a previous session's pr
 Put this file in the project, then add to `CLAUDE.md`:
 
 ```
-@GENERAL_CONSTITUTION.md
+@CONSTITUTION.md
 ```
 
 To govern every project from one copy, clone this repo once and import it by absolute path from

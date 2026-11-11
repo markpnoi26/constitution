@@ -2,7 +2,7 @@
 
 Rules for an AI coding agent, kept in the repo the agent works in.
 
-[`GENERAL_CONSTITUTION.md`](https://github.com/markpnoi26/constitution/blob/master/GENERAL_CONSTITUTION.md)
+[`CONSTITUTION.md`](https://github.com/markpnoi26/constitution/blob/master/CONSTITUTION.md)
 is the whole thing — one file, readable in a few minutes. Point your agent at it and it is bound
 by it.
 
@@ -34,13 +34,13 @@ The file is the authority; this table is just a map of it.
 **One project.** From the project's root:
 
 ```
-curl -O https://raw.githubusercontent.com/markpnoi26/constitution/master/GENERAL_CONSTITUTION.md
+curl -O https://raw.githubusercontent.com/markpnoi26/constitution/master/CONSTITUTION.md
 ```
 
 Then add this line to that project's `CLAUDE.md`:
 
 ```
-@GENERAL_CONSTITUTION.md
+@CONSTITUTION.md
 ```
 
 **Every project at once.** Clone the repo somewhere permanent:
@@ -52,7 +52,7 @@ git clone https://github.com/markpnoi26/constitution.git ~/code/constitution
 Then import it by absolute path from `~/.claude/CLAUDE.md`:
 
 ```
-@/home/you/code/constitution/GENERAL_CONSTITUTION.md
+@/home/you/code/constitution/CONSTITUTION.md
 ```
 
 One copy, one source of truth, amended in one place.
