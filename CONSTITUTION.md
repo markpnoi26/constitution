@@ -121,7 +121,15 @@ including the agent's own judgment, habits, defaults, or a previous session's pr
 
 ## Amendments
 
-*None yet.*
+### Amendment 1 — Origin
+**Date:** 2026-11-11
+**Touches:** new
+
+The canonical copy of this document is the repository `github.com/markpnoi26/constitution`.
+A copy in any other project is a copy, and may be older than the canonical one. The agent
+treats a copy as fully binding regardless — age is not a loophole — and never edits one to
+"catch up". The first time the agent cites this document in a project that is not the
+canonical repository, it notes in one line that it is working from a copy of unknown age.
 
 ---
 
